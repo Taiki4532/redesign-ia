@@ -25,7 +25,8 @@ const getData = async () => {
     const response =  await fetch(endpoint);
     if(response.ok){
       let jsonResponse = await response.json();
-            renderJson(jsonResponse);
+        jsonResponse.records.pop();
+        renderJson(jsonResponse);
     }
   }
   catch(error){
