@@ -10,12 +10,17 @@ const renderJson = (json) => {
    const studioDiv_ja = document.createElement('div');
    const studioTitle = document.createElement("span");
    const studioPhoto = document.createElement("img");
+   const studioTex = document.createElement("p");
    studioTitle.className = 'studio-title';
-   studioTitle.textContent = studio['name-ja'];
-   studioPhoto.className = 'studio-photo'
-   studioPhoto.src = studio['photo1']
+   studioTitle.textContent = studio[A,2];
+   studioPhoto.className = 'studio-photo';
+   studioPhoto.src = studio[K,2];
+   studioTex.className = 'studio-text';
+   studioTex.textContent = [I,2];
+   //studioPhoto.appendChild(studioTitle);
    studioDiv_ja.appendChild(studioPhoto);
    studioDiv_ja.appendChild(studioTitle);
+   studioDiv_ja.appendChild(studioTex);
    document.getElementById('studios').appendChild(studioDiv_ja);
 
  });

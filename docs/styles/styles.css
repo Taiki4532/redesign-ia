@@ -17,13 +17,19 @@ h3{
   background: #f8f8f8;
   min-height: 3em;
 }
+
+#studios_en > div {
+  margin: 2em 0;
+  padding: 0.5em;
+  background: #f8f8f8;
+  min-height: 3em;
+}
+
 .studio-title {
   font-weight: bold;
 }
 .studio-title-en {
-  margin-left: 1em;
-  font-weight: 100;
-  opacity: 0.75;
+  font-weight: bold;
 }
 pre#result {
   background-color: #444;
