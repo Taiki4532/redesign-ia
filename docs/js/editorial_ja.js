@@ -24,6 +24,7 @@ const renderJson = (json) => {
    document.getElementById('studios').appendChild(studioDiv_ja);
 
  });
+ 
   document.getElementById('result').textContent = JSON.stringify(json, null, 1);
 }
 
