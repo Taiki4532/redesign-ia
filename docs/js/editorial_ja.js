@@ -5,25 +5,22 @@ const endpoint = `${uri}?id=${id}&sheet=${sheet}`;
 
 const renderJson = (json) => {
   const studios = json.records;
-  studios.forEach(studio => {
-
+  
    const studioDiv_ja = document.createElement('div');
    const studioTitle = document.createElement("span");
    const studioPhoto = document.createElement("img");
    const studioTex = document.createElement("p");
    studioTitle.className = 'studio-title';
-   studioTitle.textContent = studio[A,2];
+   studioTitle.textContent = studio[0];
    studioPhoto.className = 'studio-photo';
-   studioPhoto.src = studio[K,2];
+   studioPhoto.src = studio[0];
    studioTex.className = 'studio-text';
-   studioTex.textContent = [I,2];
+   studioTex.textContent = [0];
    //studioPhoto.appendChild(studioTitle);
    studioDiv_ja.appendChild(studioPhoto);
    studioDiv_ja.appendChild(studioTitle);
    studioDiv_ja.appendChild(studioTex);
    document.getElementById('studios').appendChild(studioDiv_ja);
- });
-
   document.getElementById('result').textContent = JSON.stringify(json, null, 1);
 }
 
