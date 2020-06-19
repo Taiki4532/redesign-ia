@@ -16,7 +16,6 @@ const renderJson = (json) => {
     studioDiv_en.appendChild(studioPhoto);
     studioDiv_en.appendChild(studioTitleEn);
     document.getElementById('studios_en').appendChild(studioDiv_en);
-
 });
 document.getElementById('result').textContent = JSON.stringify(json, null, 2);
 }

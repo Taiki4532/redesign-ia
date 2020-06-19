@@ -35,5 +35,4 @@ const getData = async () => {
     console.log(error);
   }
 }
-
 getData();
