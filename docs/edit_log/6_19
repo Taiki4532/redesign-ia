@@ -1,0 +1,22 @@
+2020/06/19
+renderJson を改良して他のシートに対応するときにつまずく
+
+const getData2 = async () => {
+  try{
+    const response2 =  await fetch(endpoint2);
+    if(response2.ok){
+      let jsonResponse2 = await response2.json();
+        jsonResponse2.records.pop();
+        renderJson2(jsonResponse2);
+    }
+  }
+  catch(error){
+    console.log(error);
+  }
+}
+getData2();
+
+この部分の変数を全て変えること
+数字をつけるより名前を変えた方が良い
+
+webコンソールをみてエラーを確認すること
