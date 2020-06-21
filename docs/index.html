@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <title>東京都立大学システムデザイン学部インダストリアルアート学科</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
     <script src="js/index.js"></script>
   </head>
   <body>
@@ -50,6 +52,17 @@
     <h3>教員</h3>
     <div id="faculties"></div>
   </section>
+
+  <div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoidGFrYWhhc2hpeXVraWhpcm8iLCJhIjoiY2tib3J4cXgxMWkxdDJycW4wdHExMGEzYyJ9.8HTI2zQpJdy3BAHc17JNIQ';
+  var map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/takahashiyukihiro/ckbot07t81ckk1iojkna3leml',
+  center: [35.6614,139.3668],
+  hash: true
+});
+</script>
   
   </body>
 </html>
