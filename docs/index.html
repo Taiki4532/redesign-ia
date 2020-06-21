@@ -58,10 +58,11 @@
   mapboxgl.accessToken = 'pk.eyJ1IjoidGFrYWhhc2hpeXVraWhpcm8iLCJhIjoiY2tib3J4cXgxMWkxdDJycW4wdHExMGEzYyJ9.8HTI2zQpJdy3BAHc17JNIQ';
   var map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/takahashiyukihiro/ckbot07t81ckk1iojkna3leml',
-  center: [35.6614,139.3668],
-  hash: true
+  //zoom: 14.75,
+  style: 'mapbox://styles/takahashiyukihiro/ckbot07t81ckk1iojkna3leml/draft',
 });
+  map.setCenter([35.664,139.372]);
+  map.setZoom(14.75);
 </script>
   
   </body>
