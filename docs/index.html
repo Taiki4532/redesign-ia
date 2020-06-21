@@ -53,16 +53,17 @@
     <div id="faculties"></div>
   </section>
 
-  <div id='map' style='width: 400px; height: 300px;'></div>
+  <div id='map' style='width: 600px; height: 450px;'></div>
 <script>
   mapboxgl.accessToken = 'pk.eyJ1IjoidGFrYWhhc2hpeXVraWhpcm8iLCJhIjoiY2tib3J4cXgxMWkxdDJycW4wdHExMGEzYyJ9.8HTI2zQpJdy3BAHc17JNIQ';
   var map = new mapboxgl.Map({
   container: 'map',
-  //zoom: 14.75,
   style: 'mapbox://styles/takahashiyukihiro/ckbot07t81ckk1iojkna3leml/draft',
+  zoom: 14,
+  center: [139.372,35.664]
 });
-  map.setCenter([35.664,139.372]);
-  map.setZoom(14.75);
+  // map.setCenter([35.664,139.372]);
+  // map.setZoom(14.75);
 </script>
   
   </body>
