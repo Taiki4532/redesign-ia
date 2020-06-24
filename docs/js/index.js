@@ -55,7 +55,7 @@ const renderJson2 = (json) => {
    facultyTitle.textContent = faculty['f-faculty-title-ja'];
    facultyStudio.className = 'faculty-studio';
    facultyStudio.textContent = faculty['f-studio-ja'];
-   facultyMajor.className = 'faculty-name';
+   facultyMajor.className = 'faculty-major';
    facultyMajor.textContent = faculty['major-ja'];
    facultyPhoto.className = 'faculty-photo';
    facultyPhoto.src = faculty['faculty-photo'];

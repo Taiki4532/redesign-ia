@@ -1,16 +1,69 @@
 
 body {
+  background-image: url("/images/11-min.png");
   font-family: sans-serif;
 }
-h1, h2 {
-  font-weight: 400;
-  color: steelblue;
+.header{
+  font-weight: bold;
+  font-size: 10px;
+  color: rgb(20, 20, 20);
+  text-align: right;
+}
+h1 {
+  font-weight: bold;
+  font-size: 80px;
+  color: rgb(20, 20, 20);
+  text-align: center;
+}
+h2{
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(20, 20, 20);
+  text-align: center;
 }
 h3{
-  padding-top: 5em;
   font-weight: bold;
-  color: rgb(0,0,0);
+  font-size: 30px;
+  color: rgb(20, 20, 20);
 }
+
+h4{
+  font-weight: 300;
+  text-align: center;
+  color: rgb(20, 20, 20);
+}
+
+span.studio-title{
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(20, 20, 20);
+}
+span.faculty-name{
+  font-weight: 700;
+  text-align: center;
+  font-size: 20px;
+  color: rgb(20, 20, 20);
+}
+span.faculty-title{
+  font-weight: 700;
+  text-align: center;
+  font-size: 16px;
+  color: rgb(20, 20, 20);
+}
+span.faculty-studio{
+  font-weight: 700;
+  text-align: center;
+  font-size: 16px;
+   color: rgb(20, 20, 20);
+}
+span.faculty-major{
+  font-weight: 700;
+  text-align: center;
+  font-size: 12px;
+  color: rgb(20, 20, 20);
+}
+
 #studios > div {
   margin: 2em 0;
   padding: 0.5em;
@@ -30,6 +83,13 @@ h3{
 }
 .studio-title-en {
   font-weight: bold;
+}
+.CP{
+  font-weight: 200;
+  text-align: center;
+  font-size: 10px;
+  color: rgb(20, 20, 20);
+
 }
 pre#result {
   background-color: #444;
