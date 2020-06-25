@@ -10,8 +10,9 @@ const renderJson = (json) => {
   studios.forEach(studio => {
 
    const studioDiv_ja = document.createElement('div');
-   const studioTitle = document.createElement("span");
+   const studioTitle = document.createElement("p");
    const studioPhoto = document.createElement("img");
+   studioDiv_ja.className = "studio-holder";
    studioTitle.className = 'studio-title';
    studioTitle.textContent = studio['name-ja'];
    studioPhoto.className = 'studio-photo';
@@ -21,7 +22,7 @@ const renderJson = (json) => {
    document.getElementById('studios').appendChild(studioDiv_ja);
 
  });
-  //document.getElementById('result').textContent = JSON.stringify(json, null, 1);
+  
 }
 
 const getData = async () => {
@@ -44,11 +45,13 @@ const renderJson2 = (json) => {
   faculties.forEach(faculty => {
 
    const facultyDiv_ja = document.createElement('div');
-   const facultyName = document.createElement("span");
-   const facultyTitle = document.createElement("span");
-   const facultyStudio = document.createElement("span");
-   const facultyMajor = document.createElement("span");
+   const facultyText = document.createElement('div');
+   const facultyName = document.createElement("p");
+   const facultyTitle = document.createElement("p");
+   const facultyStudio = document.createElement("p");
+   const facultyMajor = document.createElement("p");
    const facultyPhoto = document.createElement("img");
+   facultyText.className = 'faculty-text';
    facultyName.className = 'faculty-name';
    facultyName.textContent = faculty['f-faculty-ja'];
    facultyTitle.className = 'faculty-title';
@@ -60,13 +63,13 @@ const renderJson2 = (json) => {
    facultyPhoto.className = 'faculty-photo';
    facultyPhoto.src = faculty['faculty-photo'];
    facultyDiv_ja.appendChild(facultyPhoto);
-   facultyDiv_ja.appendChild(facultyName);
-   facultyDiv_ja.appendChild(facultyTitle);
-   facultyDiv_ja.appendChild(facultyStudio);
-   facultyDiv_ja.appendChild(facultyMajor);
+   facultyText.appendChild(facultyName);
+   facultyText.appendChild(facultyTitle);
+   facultyText.appendChild(facultyStudio);
+   facultyText.appendChild(facultyMajor);
    document.getElementById('faculties').appendChild(facultyDiv_ja);
+   document.getElementById('faculties').appendChild(facultyText);
  });
- //document.getElementById('result').textContent = JSON.stringify(json, null, 1);
 }
 
 const getData2 = async () => {
