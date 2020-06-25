@@ -21,7 +21,7 @@
             <h1>Department of Industrial Art</h1>
           </div>
 
-          <div class = "department_description">  
+          <div id = "department_description_en">  
             <h4>This department incorporates various subjects related to the urban context, and considers them from both design and engineering points of view. Its aim I s to create new value and design innovation at an accelerated rate for the immense urban fabric of the nation’s capital. The curriculum consists of specialized subjects from two broad fields, Media Art and Product Design. Students can increase their expertise by gaining a broad, multi-disciplinary perspective that crosses the boundaries of various design disciplines.</h3>
           </div>
       </header>
@@ -82,8 +82,9 @@
       zoom: 14,
       center: [139.372,35.664]
     });
-      // map.setCenter([35.664,139.372]);
-      // map.setZoom(14.75);
+    var marker = new mapboxgl.Marker()
+        marker.setLngLat([139.366400,35.661683]);
+        marker.addTo(map);
     </script>
     </div>
   </section>

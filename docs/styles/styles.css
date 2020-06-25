@@ -2,7 +2,7 @@
 body {
   background: url("../images/11-min.png");
   background-repeat: no-repeat;
-  background-size: 1440px 10600px;
+  background-size: 1440px 11000px;
   font-family: sans-serif;
 }
 .header{
@@ -19,6 +19,9 @@ body {
 
 .department_description{
   margin:50px 300px 500px 300px;
+}
+#department_description_en{
+  margin:100px 300px 500px 300px;
 }
 
 h1 {
@@ -61,6 +64,7 @@ h4{
 }
 hr{
   width: 90%;
+  line-height: 4px;
   color: rgb(20, 20, 20);
 }
 .studio_block{
@@ -187,5 +191,8 @@ p.faculty-major{
   text-align: center;
   font-size: 10px;
   color: rgb(20, 20, 20);
+}
+
+#department_description_en{
 
 }
