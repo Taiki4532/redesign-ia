@@ -104,6 +104,7 @@ p.faculty-name{
   font-weight: 700;
   text-align: left;
   font-size: 20px;
+  margin-top: 0px;
   color: rgb(20, 20, 20);
 }
 p.faculty-title{
@@ -126,6 +127,14 @@ p.faculty-major{
 }
 .faculty-text{
   width: 180px;
+  height:200px;
+  margin-top:0px;
+}
+.faculty-link{
+  font-weight: 700;
+  text-align: left;
+  font-size: 12px;
+  color: rgb(20, 20, 20);
 }
 #faculties > div{
   margin: 2em 0;

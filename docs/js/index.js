@@ -67,6 +67,15 @@ const renderJson2 = (json) => {
    facultyText.appendChild(facultyTitle);
    facultyText.appendChild(facultyStudio);
    facultyText.appendChild(facultyMajor);
+
+   if(faculty['f-link'] !== ''){
+    const facultyLink = document.createElement('a');
+    facultyLink.className = 'faculty-link';
+    facultyLink.textContent = '教員のウェブサイト';
+    facultyLink.href = faculty['f-link'];
+facultyText.appendChild(facultyLink);
+  }
+  
    document.getElementById('faculties').appendChild(facultyDiv_ja);
    document.getElementById('faculties').appendChild(facultyText);
  });
