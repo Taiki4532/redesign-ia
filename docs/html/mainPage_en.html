@@ -4,23 +4,95 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
     <title>Tokyo Metropolitan University
         Department of Industrial Art</title>
     <script src="/js/mainPage_en.js"></script>
   </head>
+
   <body>
       <header>
-          <a rel = "alternate" href="/index.html"><h4>JA</h4></a>
+          <a rel = "alternate" href="/index.html"><h4 class ="header">JA</h4></a>
+          <h4 class ="header">EN</h4>
+     
+          <div class = "department_name">
+            <h1>Tokyo Metropolitan University</h1>
+            <h1>Department of Industrial Art</h1>
+          </div>
+
+          <div class = "department_description">  
+            <h4>This department incorporates various subjects related to the urban context, and considers them from both design and engineering points of view. Its aim I s to create new value and design innovation at an accelerated rate for the immense urban fabric of the nation’s capital. The curriculum consists of specialized subjects from two broad fields, Media Art and Product Design. Students can increase their expertise by gaining a broad, multi-disciplinary perspective that crosses the boundaries of various design disciplines.</h3>
+          </div>
       </header>
-    <div>
-      <h1>Tokyo Metropolitan University
-        Department of Industrial Art</h1>
+      
+    <section class = "about">
+      <hr>
+      <div>
+        <h3 class = "section_title">ABOUT</h3>
+      </div>
+
+      <div>
+        <h2 class = "about_title">New research born from integrating engineering and cultural fundamentals</h2>
+        <p class = "about_description">What is aim of the Department of lndustrial Art? To integrate engineering and design, bring together the fundamentals of technology and culture, to pursue the leading edge where skilled craftsmanship meets information technology refining both technology and sensibility, and resulting in new value creation.</p>
+      </div>
+
+      <div>
+        <h2 class = "about_title">2 Cores, 12 Studio</h2>
+        <p class = "about_description">The Department of Industrial Art has two cores, Product Design, and Media Creation, and 12 studios. Each studio's areas of specialization involve skilled crafts and information media, and each liaise differently, to explore the latest in new value creation.</p>
+      </div>
+
+      <div>
+        <h2 class = "about_title">Society today needs designers ready to think big</h2>
+        <p class = "about_description">We are proud of the Department of Industrial Art, Faculty and Graduate School of System Design's unique pairing of product-related and media-related design disciplines within the Metropolitan University's science and engineering departments. Design is not just about creating form, but it's rather about playing an important role in the creation of new products and trends, which the creation is of the concept, it's architecture, or the production and integration of its application. Designers today must not only have specialist knowledge, but they must also be able to take initiative To achieve this, we encourage students to take interest in not only their own specialization, but also the wider world of science and technology, culture and social sciences, popular products and media, and utilize our facilities to explore new types of design by drawing on all of them. Our curriculum is based on : 4 years of departmental study followed by 2 years of hands-on professional specialization.</p>
+      </div>
+  </section>
+
+  <section class = "studio_block">
+    <hr>
+    <h3 class = "section_title">STUDIOS</h3>
+
+    <div class = "studio_contents">
+      <div id="studios"></div>
     </div>
-    <div>  
-      <h3>This department incorporates various subjects related to the urban context, and considers them from both design and engineering points of view. Its aim I s to create new value and design innovation at an accelerated rate for the immense urban fabric of the nation’s capital. The curriculum consists of specialized subjects from two broad fields, Media Art and Product Design. Students can increase their expertise by gaining a broad, multi-disciplinary perspective that crosses the boundaries of various design disciplines.</h3>
+
+  </section>
+
+  <section class = "faculty_block">
+    <hr>
+    <h3 class = "section_title">FACULTIES</h3>
+
+    <div class = "faculty_contents">
+      <div id="faculties"></div>
     </div>
-    <div id="studios_en"></div>
-    <!-- <pre id="result"></pre> -->
-    <!-- <script src="/js/mainPage_en.js"></script> -->
+
+  </section>
+
+  <section class = "access_block">
+    <hr>
+    <h3 class = "section_title">ACCESS</h3>
+    <div class ="access_contents">
+ 
+    <div id='map' ></div>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoidGFrYWhhc2hpeXVraWhpcm8iLCJhIjoiY2tib3J4cXgxMWkxdDJycW4wdHExMGEzYyJ9.8HTI2zQpJdy3BAHc17JNIQ';
+      var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/takahashiyukihiro/ckbot07t81ckk1iojkna3leml/draft',
+      zoom: 14,
+      center: [139.372,35.664]
+    });
+      // map.setCenter([35.664,139.372]);
+      // map.setZoom(14.75);
+    </script>
+    </div>
+  </section>
+
+  <div class = "CP">
+    <p>Tokyo Metropolitan University
+      Faculty & Graduate School of Systems Design</p>
+    <p>Copyright ©2018 Tokyo Metropolitan University.
+      All rights reserved.</p>
+  </div>
   </body>
 </html>
