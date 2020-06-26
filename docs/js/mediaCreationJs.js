@@ -10,8 +10,20 @@ switch (getPageTitle) {
   case "エディティングスタジオ":
     pageNumber = 0;
     break;
+  case "製品・サービススタジオ":
+    pageNumber = 1;
+    break;
+  case "エルゴノミックデザインスタジオ":
+    pageNumber = 2;
+    break;
   case "インタラクティブアートスタジオ":
     pageNumber = 3;
+    break;
+  case "インターフェースデザインスタジオ":
+    pageNumber = 4;
+    break;
+  case "インテリアデザインスタジオ":
+    pageNumber = 5;
     break;
   case "映像デザインスタジオ":
     pageNumber = 6;
@@ -21,6 +33,12 @@ switch (getPageTitle) {
     break;
   case "ソフトウェアデザインスタジオ":
     pageNumber = 8;
+    break;
+  case "空間デザインスタジオ":
+    pageNumber = 9;
+    break;
+  case "トランスポーテーションデザインスタジオ":
+    pageNumber = 10;
     break;
   case "ヴィジュアルコミュニケーションデザインスタジオ":
     pageNumber = 11;

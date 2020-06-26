@@ -54,11 +54,17 @@ body {
 .sidenav .menu-title:hover{
   background-color: rgb(255, 255, 255);
 }
-
-
 .department_name{
   margin:100px 100px 60px 100px;
   
+}
+a{
+  text-decoration: none;
+  color: rgb(20, 20, 20);
+}
+span{
+  font-weight: 700;
+  color: rgb(20, 20, 20)
 }
 
  @media screen and (max-height: 450px) {

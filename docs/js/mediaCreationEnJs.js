@@ -13,18 +13,35 @@ switch (getPageTitle) {
   case "Editorial Design Studio":
     pageNumber = 0;
     break;
+  case "Equipment & Service Design Studio":
+    pageNumber = 1;
+    break;
+  case "Ergonomics Design Studio":
+    pageNumber = 2;
+    break;
   case "Interactive Art Studio":
     pageNumber = 3;
+    break;
+  case "Interface Design Studio":
+    pageNumber = 4;
+    break;
+  case "Interior Design Studio":
+    pageNumber = 5;
     break;
   case "Kinematograph Design Studio":
     pageNumber = 6;
     break;
-
   case "Network Design Studio":
     pageNumber = 7;
     break;
   case "Software Design Studio":
     pageNumber = 8;
+    break;
+  case "Spatial Design Studio":
+    pageNumber = 9;
+    break;
+  case "Transportation Design Studio":
+    pageNumber = 10;
     break;
   case "Visual Communication Design Studio":
     pageNumber = 11;

@@ -13,9 +13,77 @@
 
   <body>
       <header>
+        <div class = "lang">
           <a rel = "alternate" href="../index.html"><h4 class ="header">JA</h4></a>
           <h4 class ="header">EN</h4>
+        </div> 
       </header>
+
+      <div id="mySidenav" class="sidenav">
+        <span class="closebtn" onclick="closeNav()">&times;</span>
+        <ul class = "menu_home">
+          <li class = "menu-title">
+            <span>HOME</span>
+          </li>
+          <li class = "menu-item">
+            <a href = #About><span>ABOUT</span></a>
+          </li>
+          <li class = "menu-item">
+            <a href = #Studio><span>STUDIOS</span></a>
+          </li>
+          <li class = "menu-item">
+            <a href = #Faculty><span>FACULTIES</span></a>
+          </li>
+          <li class = "menu-item">
+            <a href = #Access><span>ACCESS</span></a>
+          </li>
+        </ul>
+    
+        <ul class = "menu_studio">
+          <li class = "menu-title">
+            <span>STUDIO PAGES</span>
+          </li>
+          <li class = "menu-item">
+            <a href = "editorialDesignStudio-en.html"><span>EDITORIAL</span></a>
+          </li>
+          <li class = "menu-item">
+            <a href = "equipmentDesignStudio-en.html"><span>PRODUCT & SERVICE</span></a>
+          </li>
+          <li class = "menu-item">
+            <a href = "ergonimicDesignStudio-en.html"><span>ERGONOMIC</span></a>
+          </li>
+          <li class = "menu-item">
+            <a href = "interactiveArtStudio-en.html"><span>INTERACTIVE ART</span></a>
+          </li>
+          <li class = "menu-item">
+            <a href = "interfaceDesignStudio-en.html"><span>INTERFACE</span></a>
+          </li>
+          <li class = "menu-item">
+            <a href = "interiorDesignStudio-en.html"><span>INTERIOR</span></a>
+          </li>
+          <li class = "menu-item">
+            <a href = "computerGraphicsAnimation-en.html"><span>KINEMATOGRAPH</span></a>
+          </li>
+          <li class = "menu-item">
+            <a href = "networkDesignStudio-en.html"><span>NETWORK</span></a>
+          </li>
+          <li class = "menu-item">
+            <a href = "softwareDesignStudio-en.html"><span>SOFTWARE</span></a>
+          </li>
+          <li class = "menu-item">
+            <a href = "spacialDesignStudio-en.html"><span>SPACE</span></a>
+          </li>
+          <li class = "menu-item">
+            <a href = "transportationDesignStudio-en.html"><span>TRASPORTATION</span></a>
+          </li>
+          <li class = "menu-item">
+            <a href = "visualCommunicationDesignStudio-en.html"><span>VISUAL COMMUNICATION</span></a>
+          </li>
+        </ul>
+      </div>
+
+      <span onclick="openNav()" id = "openBtn">&#9776;</span>
+
           <div class = "department_name">
             <h1>Tokyo Metropolitan University</h1>
             <h1>Department of Industrial Art</h1>
@@ -28,7 +96,7 @@
 
 
       
-    <section class = "about">
+    <section class = "about" id = "About">
       <hr>
       <div>
         <h3 class = "section_title">ABOUT</h3>
@@ -50,7 +118,7 @@
       </div>
   </section>
 
-  <section class = "studio_block">
+  <section class = "studio_block" id = "Studio">
     <hr>
     <h3 class = "section_title">STUDIOS</h3>
 
@@ -60,7 +128,7 @@
 
   </section>
 
-  <section class = "faculty_block">
+  <section class = "faculty_block" id ="Faculty">
     <hr>
     <h3 class = "section_title">FACULTIES</h3>
 
@@ -70,7 +138,7 @@
 
   </section>
 
-  <section class = "access_block">
+  <section class = "access_block" id = "Access">
     <hr>
     <h3 class = "section_title">ACCESS</h3>
     <div class ="access_contents">
