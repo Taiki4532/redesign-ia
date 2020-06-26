@@ -32,29 +32,39 @@ body {
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 .sidenav li{
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 20px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 12px;
   color: rgb(20, 20, 20);
   background-color: rgba(255, 255, 255, 0.50);
   display: block;
+  white-space: nowrap;
+  overflow: hidden; 
   transition: 0.3s;
 }
 
 .sidenav li:hover {
   color: rgb(20, 20, 20);
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.85);
+  transition: 0.25s ease-in;
 }
+.sidenav .menu-title{
+  background-color: rgb(255, 255, 255);
+}
+.sidenav .menu-title:hover{
+  background-color: rgb(255, 255, 255);
+}
+
 
 .department_name{
   margin:100px 100px 60px 100px;
   
 }
 
-/* @media screen and (max-height: 450px) {
+ @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-} */
+} 
 
 .sidenav .closebtn {
   position: absolute;
@@ -63,7 +73,18 @@ body {
   font-size: 36px;
   margin-left: 50px;
 }
-
+.closebtn:hover{
+  cursor: pointer;
+}
+#openBtn{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 36px;
+  margin-left: 50px;
+  visibility: visible;
+  cursor: pointer;
+}
 .department_description{
   margin:50px 300px 500px 300px;
 }
