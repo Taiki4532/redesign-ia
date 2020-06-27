@@ -19,6 +19,8 @@ body {
   float: right;
   clear: both;
 }
+
+/* ここから */
 .sidenav {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -42,7 +44,6 @@ body {
   overflow: hidden; 
   transition: 0.3s;
 }
-
 .sidenav li:hover {
   color: rgb(20, 20, 20);
   background-color: rgba(255, 255, 255, 0.85);
@@ -56,22 +57,19 @@ body {
 }
 .department_name{
   margin:100px 100px 60px 100px;
-  
 }
-a{
+.sidenav a{
   text-decoration: none;
   color: rgb(20, 20, 20);
 }
-span{
+.sidenav span{
   font-weight: 700;
   color: rgb(20, 20, 20)
 }
-
  @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 } 
-
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -91,6 +89,8 @@ span{
   visibility: visible;
   cursor: pointer;
 }
+/* ここまでサイドメニュー */
+
 .department_description{
   margin:50px 300px 500px 300px;
 }
