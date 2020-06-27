@@ -104,15 +104,19 @@ body {
   font-size: 36px;
   margin-right: 50px;
   cursor: pointer;
-  color: rgb(20, 20, 20); 
-  transition: 0.1s; 
+  color: rgb(20, 20, 20);  
+  line-height: 75%;
 }
-#myOpenBtn{
-  transition: 0.25;
+.topBtnIcon span{
+  font-size: 18px;
+  font-weight: 700;
+  height:18px;
+
 }
+/* #myOpenBtn{
+} */
 #myTopBtn{
   opacity: 0;
-  transition: 0.25;
 }
 
 .department_description{
