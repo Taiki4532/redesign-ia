@@ -1,20 +1,24 @@
-<!DOCTYPE html>
-<!-- index.html -->
+<!-- index_en.html -->
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="../styles/mediaCreationStyles.css">
-    <title>Kinematograph Design Studio</title>
-    <script src="../js/mediaCreationEnJs.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/link.css">
+    <title>Tokyo Metropolitan University Department of Industrial Art</title>
+    <script src="../js/link_en.js"></script>
   </head>
+
   <body>
 
-    
     <header>
-      <p id="university-name">Tokyo Metropolitan University | Department of Industrail Art<br>東京都立大学 インダストリアルアート学科</p>
-      <a rel="alternate" href="computerGraphicsAnimation.html"><h4 class="switch">JP</h4></a>
-      <h4 class="switch">EN</h4>
+        <div class = "lang">
+        <a  rel = "alternate" href="link.html"><h4 class ="header">JP</h4></a>
+        <h4 class ="header">EN</h4>
+        </div>
+        <div class = "department_name">
+            <h1>Graduation Exhibition Link</h1>
+          </div>
     </header>
+
 
     <div id="mySidenav" class="sidenav">
       <span class="closebtn" onclick="closeNav()">&times;</span>
@@ -82,24 +86,14 @@
         </li>
       </ul>
     </div>
-
+    
+    <div id = "myOpenBtn" class = "openBtn">
     <span onclick="openNav()" id = "openBtn">&#9776;</span>
-
-      <div id="studioTopDiv"></div>
-      <div id="studioPhotoThumbnails"></div>
-      <div id="studio-about">
-        <h2 class="paragraph-name">Description of this Studio</h2>
-        <p id="studio-description"></p>
-        <h2 class="paragraph-name">Faculty</h2>
-        <p id="studio-faculty"></p>
-        <img class="image_place">
+    </div>
+    
+    <div class = "contents">
+      <div id = "links"></div>
       </div>
 
-      <div class="CP">
-        <p>東京都立大学 システムデザイン学部／研究科
-          Faculty &amp; Graduate School of Systems Design</p>
-        <p>Copyright ©2018 Tokyo Metropolitan University.
-          All rights reserved.</p>
-      </div>
   </body>
 </html>

@@ -285,7 +285,7 @@ p.faculty-major{
 #map{
   width: 600px; 
   height: 450px;
-
+  text-align: right;
 }
 
 .CP{

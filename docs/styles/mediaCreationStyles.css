@@ -31,12 +31,12 @@ body {
   clear: both;
 }
 
-/* ここから */
+/* ここから サイドメニュー*/
 .sidenav {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 20; /* Stay on top */
+  z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   background-color: rgba(255, 255, 255, 0.25); 
@@ -73,7 +73,7 @@ body {
   text-decoration: none;
   color: rgb(20, 20, 20);
 }
-span{
+.sidenav span{
   font-weight: 700;
   color: rgb(20, 20, 20)
 }
@@ -91,13 +91,15 @@ span{
 .closebtn:hover{
   cursor: pointer;
 }
-#openBtn{
+.openBtn{
+  transition: 0.3s;
+}
+.openBtnIcon{
   position: fixed;
   top: 20px;
   left: 20px;
   font-size: 36px;
   margin-left: 50px;
-  visibility: visible;
   cursor: pointer;
 }
 /* ここまでサイドメニュー */

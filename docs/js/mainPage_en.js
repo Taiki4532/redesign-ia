@@ -98,11 +98,22 @@ getData2();
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
-  document.getElementsById("openBtn").style.visibility = "hidden";
+  document.getElementById("myOpenBtn").style.opacity = "0";
 }
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
-  document.getElementsById("openBtn").style.visibility = "visible";
+  document.getElementById("myOpenBtn").style.opacity = "1";
 }
+
+function topButtonShowing(){
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    document.getElementById("myTopBtn").style.opacity = "1";
+  } else {
+    document.getElementById("myTopBtn").style.opacity = "0";
+  }
+} 
+
+window.onscroll = function() {topButtonShowing()};
+
