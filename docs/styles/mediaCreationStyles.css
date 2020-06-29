@@ -1,34 +1,29 @@
 body {
   margin:0;
   width:100vw;
+  overflow-x: hidden;
   height:auto;
   font-family: sans-serif;
-  position: relative;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-#background{
-  margin:0;
-  width:100vw;
-  height:auto;
-  background-image: url('../images/editorialDesign.png');
   background-repeat:no-repeat;
   background-size:cover;
   position: relative;
   padding: 0;
-  overflow-x: hidden;
 }
 
 .switch{
   font-weight: bold;
-  font-size: 2vw;
-  color: rgb(20, 20, 20);
+  font-size: 1.4vw;
+  color: rgb(60, 60, 60);
   text-align: right;
-  margin:0px 2vw 0px 2vw;
-  width: 100px;
+  margin-right: 2vw;
+  margin-top:-2.0vw;
+  width: 5vw;
   float: right;
   clear: both;
+  cursor: pointer;
+}
+.switch:hover{
+  opacity:0.5;
 }
 
 /* ここから サイドメニュー*/
@@ -101,9 +96,10 @@ body {
   font-size: 36px;
   margin-left: 50px;
   cursor: pointer;
+  z-index: 20;
 }
 /* ここまでサイドメニュー */
-
+/* 
 #showloading{
   text-align: center;
   margin: -2vw;
@@ -114,78 +110,136 @@ body {
   background-color: white;
   transition: 1.0s;
   z-index: 10;
-}
+} */
 
 
-#loading-image{
+/* #loading-image{
   width: 10vw;
   position: fixed;
   z-index: 5;
   left: 45vw;
   top: 45vh;
   transition: 1.0s;
+} */
+#en-jp{
+  position: absolute;
+  margin-top:-2.5vw;
+  right:2vw;
 }
-
-
-
-  .hidden {
-  display: none;
-  }
 
 h1 {
   font-size: 3vw;
   color: white;
-  background-color: rgb(0, 0, 0, 0.1);
 }
 
 #university-name{
+  position: absolute;
+  margin-top:-4vw;
   width: 100vw;
   text-align: center;
   font-size: 1vw;
-  color: rgb(242, 242, 242);
+  color: rgb(60, 60, 60);
 }
 
 #studioTopDiv {
-  margin-top: 10vw;
-  height: 50vw;
+  /* background-repeat: no-repeat;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  filter: saturate(70%); */
+  margin:0;
+  padding:0;
+  margin-top: 5vw;
+  height: 40vw;
+  width: 100vw;
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
+
+#studioTopPhoto{
+  background-size: cover;
+  height: 40vw;
+  width: 100vw;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: brightness(80%);
+  position: absolute;
+  z-index:1;
+}
+
+#main-contents{
+  width:100vw;
+  height:auto;
+  padding:0;
+  margin-top:-2vw;
+  background-repeat:no-repeat;
+  background-size: 150px;
+  background-size: 100vw auto;
+  color:rgb(99, 99, 99);
+}
+
 .studio-title{
+  margin-bottom:auto;
+  font-size:4vw;
+  top:15vw;
+  width:100vw;
   position: absolute;
   z-index: 2;
-  left: 13vw;
+}
+#studio-description{
+  width:50vw;
+  font-size: 1.2vw;
+  line-height: 2.5vw;
+}
+#studioGalleryDiv{
+  margin-top:0;
+  width:50vw;
+  height:35vw;
+  text-align: left;
+  overflow:hidden;
+  background-color:rgb(255, 255, 255, 0.5);
 }
 .studio-photo{
-  z-index:1;
+  width:50vw;
+  height:35vw;
+	object-fit:cover;
   position: absolute;
-  left: 10vw;
+  overflow: hidden;
 }
 
 #studioPhotoThumbnails{
-  height: 14vw;
+  width:50vw;
+  text-align: left;
+  height: 9vw;
   margin-top:1vw;
-  position: relative;
-  left: 10vw;
-  /* text-align: center; */
-  /* background-color: rgb(0, 0, 0, 0.1); */
+  right:18vw;
 }
 
 .studio-photo-thumbnail{
-  /* padding-top:1.5vw; */
-  height: 13vw;
+  z-index: 3;
+  height: 14vw;
   overflow: hidden;
   vertical-align:top;
-  padding-right: 1vw;
-  padding-left: 1vw;
-  margin:0;
+  padding:0;
+  margin:0.5vw;
+  transition:0.5s;
+  height:7vw;
+	object-fit:cover;
+}
+
+.studio-photo-thumbnail:hover{
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 #studio-about{
   margin:0;
-  padding:0;
+  padding-top:10vw;
   margin-left:10vw;
-  padding-bottom:15vw;
+  padding-bottom:3vw;
 }
 
 #studio-description{
@@ -195,17 +249,40 @@ h1 {
 }
 
 .paragraph-name{
-  padding-top:3vw;
+  font-size:3vw;
+  padding-top:5vw;
+  padding-bottom: 0;
 }
+
 #studio-faculty{
+  top:-3vh;
+  width:20vw;
+  left: 20vw;
+  margin:0;
+  padding:0;
   font-size: 1.5vw;
 }
 
+#about-faculty{
+  position: relative;
+  vertical-align:bottom;
+  height: 20vw;
+  padding:0;
+}
+#faculty-photo{
+  bottom: 0;
+  left: 0vw;
+} 
+#faculty-photo img{
+  width:15vw;
+}
+
 .CP{
+  margin-top:10vw;
   font-weight: 200;
   text-align: center;
   font-size: 10px;
-  color: rgb(20, 20, 20);
+  color: rgb(70, 70, 70);
 }
 
 /* h1, h2 {

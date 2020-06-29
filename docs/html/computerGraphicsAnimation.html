@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../styles/mediaCreationStyles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/loadingStyle.css">
     <title>映像デザインスタジオ</title>
     <script src="../js/mediaCreationJs.js"></script>
     <!-- <script src="../js/try.js"></script> -->
@@ -12,10 +13,14 @@
 
     
     <header>
+      <div id="showloading">
+        <img src="../images/ia_loading" alt="loading" id="loading-image">
+      </div>
       <p id="university-name">Tokyo Metropolitan University | Department of Industrail Art<br>東京都立大学 インダストリアルアート学科</p>
-      <h4 class="switch">JP</h4>
+      <div id="en-jp">
+        <h4 class="switch">JP</h4>
       <a rel="alternate" href="computerGraphicsAnimation-en.html"><h4 class="switch">EN</h4></a>
-      
+      </div>
     </header>
 
     <div id="mySidenav" class="sidenav">
@@ -85,7 +90,7 @@
 
       <ul>
         <li class = "menu-item">
-          <a href = "html/link.html"><span>卒業展示リンク</span></a>
+          <a href = "link.html"><span>卒業展示リンク</span></a>
         </li>
       </ul>
     </div>
@@ -94,21 +99,31 @@
       <span onclick="openNav()" class = "openBtnIcon" >&#9776;</span>
     </div>
 
-      <div id="studioTopDiv"></div>
-      <div id="studioPhotoThumbnails"></div>
-      <div id="studio-about">
-        <h2 class="paragraph-name">このスタジオについて</h2>
-        <p id="studio-description"></p>
-        <h2 class="paragraph-name">担当教員</h2>
-        <p id="studio-faculty"></p>
-        <img class="image_place">
-      </div>
+    <div id="contents" class="hidden">
+      <div id="studioTopDiv"><div id="studioTopPhoto"></div></div>
+      <div id="main-contents">
+        <div id="studio-about">
+          <h2 class="paragraph-name">このスタジオについて</h2>
+          <p id="studio-description"></p>
+          <h2 class="paragraph-name">フォトギャラリー</h2>
+          <div id="studioGalleryDiv"></div>
+          <div id="studioPhotoThumbnails"></div>
+          <h2 class="paragraph-name">担当教員</h2>
+          <div id="about-faculty">
+            <div id="faculty-photo"></div>
+            <p id="studio-faculty"></p>
+          </div>
+        </div>
 
-      <div class="CP">
-        <p>東京都立大学 システムデザイン学部／研究科
-          Faculty &amp; Graduate School of Systems Design</p>
-        <p>Copyright ©2018 Tokyo Metropolitan University.
-          All rights reserved.</p>
-      </div>
+        <div class="CP">
+          <p>東京都立大学 システムデザイン学部／研究科
+            Faculty &amp; Graduate School of Systems Design</p>
+          <p>Copyright ©2018 Tokyo Metropolitan University.
+            All rights reserved.</p>
+        </div>
+    </div>
+    </div>
   </body>
+
+  <script src="../js/loading.js"></script>
 </html>
