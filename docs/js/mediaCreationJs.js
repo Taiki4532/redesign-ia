@@ -82,7 +82,7 @@ const renderJson = (json) => {
     studioPhotoDiv.appendChild(studioPhotos[i]);
     studioPhotoThumbnail.appendChild(studioPhotosThum[i]);
   }
-  document.getElementById('studioTopDiv').appendChild(studioPhotoDiv);
+  document.getElementById('studioGalleryDiv').appendChild(studioPhotoDiv);
   document.getElementById('studioPhotoThumbnails').appendChild(studioPhotoThumbnail);
 
   if(pageNumber === 2){
@@ -106,8 +106,8 @@ const renderJson = (json) => {
   var photoNumber = studioPhotos.length - 1; //写真の配列番号0-
   //console.log(photoNumber);
   for (var i = 0; i <= photoNumber; i++) {
-    studioPhotos[i].style.width = '80%';
-    studioPhotosThum[i].style.width = '20%';
+    studioPhotos[i].style.width = '50vw';
+    studioPhotosThum[i].style.width = '9vw';
     studioPhotos[i].style.opacity = 0;
   }
   studioPhotos[photoNumber].style.opacity = 1;
@@ -126,6 +126,8 @@ const renderJson = (json) => {
   setInterval(countUp,1000); //1秒毎にcountup()を呼び出し
 
   function changeImage() {
+    count = 0;
+
 
     if (image.style.opacity == '') {
       image.style.opacity = 1;
@@ -139,7 +141,7 @@ const renderJson = (json) => {
 
       if (image.style.opacity <= 0) {
         clearInterval(intervalId);
-        counter--;
+        counter++;
         if (counter < 0) {
           counter = photoNumber;
         }
