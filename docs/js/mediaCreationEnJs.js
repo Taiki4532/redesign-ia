@@ -12,7 +12,7 @@ switch (getPageTitle) {
   case "Editorial Design Studio":
     pageNumber = 0;
     break;
-  case "Equipment&Service Design Studio":
+  case "Equipment & Service Design Studio":
     pageNumber = 1;
     break;
   case "Ergonomics Design Studio":
