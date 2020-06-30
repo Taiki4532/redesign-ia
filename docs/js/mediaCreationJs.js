@@ -49,22 +49,20 @@ switch (getPageTitle) {
 
 //取り込み
 const renderJson = (json) => {
+
   const studios = json.records;
   studios.pop();
-
   const studio = studios[pageNumber];
 
-  // const studioNameDiv = document.createElement('div');
-  // const studioNameDivEn = document.createElement('div');
   const studioPhotoDiv = document.createElement('div');
-  const studioPhotosDiv = document.createElement('div');
+  // const studioPhotosDiv = document.createElement('div');
+
   const studioPhotoThumbnail = document.createElement('div');
-  const studioPhotoThumbnails = document.createElement('div');
+  // const studioPhotoThumbnails = document.createElement('div');
 
   const studioTitle = document.createElement("h1");
   studioTitle.className = 'studio-title';
   studioTitle.textContent = studio['name-ja'];
-  //document.getElementById('studioNameDiv').appendChild(studioTitle);
   document.getElementById('studioTopDiv').appendChild(studioTitle);
 
   //スタジオの写真をstudioPhotosDivに入れる
@@ -79,7 +77,6 @@ const renderJson = (json) => {
     studioPhotosThum[i].src = studio['photo' + [i + 1]];
 
     if (studio['photo' + [i + 1]] === "") {
-      console.log('s');
       break;
     }
     studioPhotoDiv.appendChild(studioPhotos[i]);
@@ -181,33 +178,37 @@ const renderJson = (json) => {
   imageThum[4].onclick = clickThumbnail4;
   imageThum[5].onclick = clickThumbnail5;
 
-  //サムネイルをクリックした時の処理 ----------------
-  function clickThumbnail0() {
-    counter = 1;
-    changeImage();
-  }
-  function clickThumbnail1() {
-    counter = 2;
-    changeImage();
-  }
-  function clickThumbnail2() {
-    counter = 3;
-    changeImage();
-  }
-  function clickThumbnail3() {
-    counter = 4;
-    changeImage();
-  }
-  function clickThumbnail4() {
-    counter = 0;
-    changeImage();
-  }
-  function clickThumbnail5() {
-    counter = 5 - 1;
-    changeImage();
-    count = 0;
-  }
-
+ //サムネイルをクリックした時の処理
+ function clickThumbnail0() {
+  counter = 0 - 1;
+  changeImage();
+  count = 0;
+}
+function clickThumbnail1() {
+  counter = 1 - 1;
+  changeImage();
+  count = 0;
+}
+function clickThumbnail2() {
+  counter = 2 - 1;
+  changeImage();
+  count = 0;
+}
+function clickThumbnail3() {
+  counter = 3 - 1;
+  changeImage();
+  count = 0;
+}
+function clickThumbnail4() {
+  counter = 4 - 1;
+  changeImage();
+  count = 0;
+}
+function clickThumbnail5() {
+  counter = 5 - 1;
+  changeImage();
+  count = 0;
+}
   
   document.getElementById('result').textContent = JSON.stringify(json, null, 2);
 }

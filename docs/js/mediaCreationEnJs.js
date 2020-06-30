@@ -234,7 +234,6 @@ getData();
 
 
 
-
 const renderJson2 = (json) => {
   const faculties = json.records[pageNumber];
   const facultyPhoto = document.createElement("img");
