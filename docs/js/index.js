@@ -73,7 +73,7 @@ const renderJson2 = (json) => {
     facultyLink.className = 'faculty-link';
     facultyLink.textContent = '教員のウェブサイト';
     facultyLink.href = faculty['f-link'];
-facultyText.appendChild(facultyLink);
+    facultyText.appendChild(facultyLink);
   }
   
    document.getElementById('faculties').appendChild(facultyDiv_ja);

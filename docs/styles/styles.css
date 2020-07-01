@@ -169,7 +169,7 @@ hr{
   margin:200px 50px 200px 50px;
 }
 .studio_contents{
-  margin:100px 150px 100px 150px;
+  margin:100px 100px 100px 100px;
 }
 .studio-photo{
   width: 400px;
@@ -179,7 +179,8 @@ hr{
   font-size: 20px;
 }
 .studio-holder{
-  margin-left: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
   margin-bottom: 30px;
 }
 p.studio-title{
@@ -276,14 +277,26 @@ p.faculty-major{
 }
 .access_contents{
   margin:100px 150px 100px 150px;
+  display:flex;
+  flex-wrap: nowrap;
 }
-
+.access_text{
+  width:200px;
+  margin-left:30px;
+}
+.access_h3{
+  font-size: 20px;
+}
+.access_p{
+  font-size: 14px;
+}
+#access_text_top{
+  margin-top:0px;
+}
 #map{
   width: 600px; 
   height: 450px;
-  text-align: right;
 }
-
 .CP{
   font-weight: 200;
   text-align: center;
