@@ -10,6 +10,8 @@ const renderJson = (json) => {
   studios.forEach(studio => {
 
    const studioDiv_en = document.createElement('div');
+   const studioTextLink = document.createElement('a');
+   const studioPhotoLink = document.createElement('a');
    const studioTitle = document.createElement("p");
    const studioPhoto = document.createElement("img");
    studioDiv_en.className = "studio-holder";
@@ -17,8 +19,53 @@ const renderJson = (json) => {
    studioTitle.textContent = studio['name-en'];
    studioPhoto.className = 'studio-photo';
    studioPhoto.src = studio['photo1'];
-   studioDiv_en.appendChild(studioPhoto);
-   studioDiv_en.appendChild(studioTitle);
+
+   var studiopages;
+   switch (studio['name-en']) {
+    case "Editorial Design Studio":
+      studiopages = "../html/editorialDesignStudio-en.html";
+      break;
+      case "Equipment & Service Design Studio":
+        studiopages = "../html/equipmentDesignStudio-en.html";
+      break;
+      case "Ergonomics Design Studio":
+        studiopages = "../html/ergonimicDesignStudio-en.html";
+      break;
+      case "Interactive Art Studio":
+        studiopages = "../html/interactiveArtStudio-en.html";
+      break;
+      case "Interface Design Studio":
+        studiopages = "../html/interfaceDesignStudio-en.html"; 
+      break;
+      case "Interior Design Studio":
+        studiopages = "../html/interiorDesignStudio-en.html";    
+      break;
+      case "Kinematograph Design Studio":
+        studiopages = "../html/computerGraphicsAnimation-en.html";
+      break;
+      case "Network Design Studio":
+        studiopages = "../html/networkDesignStudio-en.html";  
+      break;
+      case "Software Design Studio":
+        studiopages = "../html/softwareDesignStudio-en.html";    
+      break;
+      case "Spatial Design Studio":
+        studiopages = "../html/spacialDesignStudio-en.html";    
+      break;
+      case "Transportation Design Studio":
+        studiopages = "../html/transportationDesignStudio-en.html";    
+      break;
+      case "Visual Communication Design Studio":
+        studiopages = "../html/visualCommunicationDesignStudio-en.html";
+      break;
+  }
+
+   studioPhotoLink.href = studiopages;
+   studioTextLink.href = studiopages;
+   studioPhotoLink.appendChild(studioPhoto);
+   studioTextLink.appendChild(studioTitle);
+   studioDiv_en.appendChild(studioPhotoLink);
+   studioDiv_en.appendChild(studioTextLink);
    document.getElementById('studios').appendChild(studioDiv_en);
 
  });

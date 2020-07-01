@@ -15,7 +15,7 @@ body {
   font-size: 20px;
   color: rgb(20, 20, 20);
   text-align: right;
-  margin:0px 20px 0px 20px;
+  margin:0px 50px 0px 20px;
   width: 100px;
   float: right;
   clear: both;
@@ -181,7 +181,7 @@ hr{
 .studio-holder{
   margin-left: 40px;
   margin-right: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 p.studio-title{
   font-weight: bold;
@@ -196,8 +196,19 @@ p.studio-title{
 }
 .faculty_contents{
   margin:100px 150px 100px 150px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
+.faculty-div{
+  display: flex;
+  flex-direction: row; 
+  justify-content: flex-start;
+}
+.faculty-text{
+  padding-left: 20px;
+}
 .faculty-photo{
 width: 200px;
 height: 200px;
@@ -208,11 +219,14 @@ p.faculty-name{
   text-align: left;
   font-size: 20px;
   margin-top: 0px;
+  margin-bottom: 5px;
   color: rgb(20, 20, 20);
 }
 p.faculty-title{
-  font-weight: 700;
+  font-weight: 600;
   text-align: left;
+  margin-top:5px;
+  margin-bottom: 5px;
   font-size: 16px;
   color: rgb(20, 20, 20);
 }
@@ -220,51 +234,52 @@ p.faculty-studio{
   font-weight: 700;
   text-align: left;
   font-size: 16px;
+  margin-top:5px;
+  margin-bottom: 5px;
    color: rgb(20, 20, 20);
 }
 p.faculty-major{
   font-weight: 700;
   text-align: left;
   font-size: 12px;
+  margin-top:5px;
+  margin-bottom: 5px;
   color: rgb(20, 20, 20);
 }
 .faculty-text{
-  width: 180px;
+  width: 200px;
   height:200px;
   margin-top:0px;
+  margin-bottom:50px;
+  margin-right:50px;
 }
 .faculty-link{
   font-weight: 700;
   text-align: left;
   font-size: 12px;
+  margin-top:5px;
+  margin-bottom: 5px;
   color: rgb(20, 20, 20);
 }
-#faculties > div{
-  margin: 2em 0;
-  padding: 0.5em;
-  min-height: 3em;
-  width: 200px;
-  display: inline-block;
-  margin-bottom: 100px;
+
+ #faculties{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+} 
+
+#studios{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-#studios > div {
-  margin: 2em 0;
-  padding: 0.5em;
-  min-height: 3em;
-  width: 400px;
-  display: inline-block;
-  margin-right: 50px;
-  margin-left: 40px;
-  margin-bottom: 100px;
-}
-
-#studios_en > div {
+/*#studios_en > div {
   margin: 2em 0;
   padding: 0.5em;
   background: #f8f8f8;
   min-height: 3em;
-}
+}  */
 
 .studio-title {
   font-weight: bold;
@@ -289,6 +304,9 @@ p.faculty-major{
 }
 .access_p{
   font-size: 14px;
+}
+.access_en{
+  font-weight: 500;
 }
 #access_text_top{
   margin-top:0px;

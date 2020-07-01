@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/loadingStyle.css">
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
     <title>Tokyo Metropolitan University
@@ -13,6 +14,9 @@
 
   <body>
       <header>
+        <div id="showloading">
+          <img src="../images/ia_loading" alt="loading" id="loading-image">
+        </div>
         <div class = "lang">
           <a rel = "alternate" href="../index.html"><h4 class ="header">JP</h4></a>
           <h4 class ="header">EN</h4>
@@ -164,10 +168,25 @@
       zoom: 14,
       center: [139.372,35.664]
     });
+    map.scrollZoom.disable();
     var marker = new mapboxgl.Marker()
         marker.setLngLat([139.366400,35.661683]);
         marker.addTo(map);
     </script>
+
+  <div class = "access_text">
+    <h3 class ="access_h3" id ="access_text_top">Address</h3>
+    <p class = "access_p">6-6 Asahigaoka, Hino-shi, Tokyo, Japan 191-0065<br>
+      TEL 042-585-8606</p>
+    <h3 class ="access_h3">How to get here</h3>
+    <p class = "access_p">About 20 minutes on foot from the JR Chuo Line Toyota Station (North Exit).
+      Alternatively, take the Keio Bus "Hirayama Industrial Park Circulation" and get off at "Asahigaoka Chuo Park" and walk for about 5 minutes.
+      JR Chuo Line "Hachioji" Station (North Exit), Keio Line "Keio Hachioji" Station (West Exit), Keio Bus "Hino Station"
+      Or take the "Toyota Station bound for North Exit" and get off at "Owada Sakagami" and walk for about 10 minutes
+      About 15 minutes on foot from "North Hachioji" station on the JR Hachiko line.
+    </p>
+    </div>
+
     </div>
   </section>
 
@@ -178,4 +197,5 @@
       All rights reserved.</p>
   </div>
   </body>
+  <script src="../js/loading.js"></script>
 </html>

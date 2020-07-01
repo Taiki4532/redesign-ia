@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/loadingStyle.css">
     <title>東京都立大学システムデザイン学部インダストリアルアート学科</title>
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
@@ -12,6 +13,9 @@
 
   <body>
     <header id = "top">
+      <div id="showloading">
+        <img src="../images/ia_loading" alt="loading" id="loading-image">
+      </div>
       <div class = "lang">
       <h4 class ="header">JP</h4>
       <a  rel = "alternate" href="html/mainPage_en.html"><h4 class ="header">EN</h4></a>
@@ -165,11 +169,12 @@
         zoom: 14,
         center: [139.372,35.664]
       });
+      map.scrollZoom.disable();
       var marker = new mapboxgl.Marker()
         marker.setLngLat([139.366400,35.661683]);
         marker.addTo(map);
       </script>
-    <div>
+
       <div class = "access_text">
       <h3 class ="access_h3" id ="access_text_top">所在地</h3>
       <p class = "access_p">〒 191-0065 東京都日野市旭が丘6-6<br>
@@ -182,7 +187,8 @@
         JR八高線「北八王子」駅から徒歩約15分
       </p>
       </div>
-      </div>
+  
+
   </div>
   </section>
 
@@ -194,4 +200,6 @@
 </div>
 
   </body>
+  <script src="js/loading.js"></script>
+
 </html>

@@ -12,7 +12,7 @@ switch (getPageTitle) {
   case "エディティングスタジオ":
     pageNumber = 0;
     break;
-  case "製品・サービススタジオ":
+  case "製品・サービスデザインスタジオ":
     pageNumber = 1;
     break;
   case "エルゴノミックデザインスタジオ":

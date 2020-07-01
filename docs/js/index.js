@@ -8,8 +8,10 @@ const endpoint2 = `${uri}?id=${id}&sheet=${sheet2}`;
 const renderJson = (json) => {
   const studios = json.records;
   studios.forEach(studio => {
-
+    
    const studioDiv_ja = document.createElement('div');
+   const studioTextLink = document.createElement('a');
+   const studioPhotoLink = document.createElement('a');
    const studioTitle = document.createElement("p");
    const studioPhoto = document.createElement("img");
    studioDiv_ja.className = "studio-holder";
@@ -17,8 +19,53 @@ const renderJson = (json) => {
    studioTitle.textContent = studio['name-ja'];
    studioPhoto.className = 'studio-photo';
    studioPhoto.src = studio['photo1'];
-   studioDiv_ja.appendChild(studioPhoto);
-   studioDiv_ja.appendChild(studioTitle);
+
+   var studiopages;
+   switch (studio['name-ja']) {
+    case "エディティングスタジオ":
+      studiopages = "../html/editorialDesignStudio.html";
+      break;
+    case "製品・サービスデザインスタジオ":
+      studiopages = "../html/equipmentDesignStudio.html";
+      break;
+    case "エルゴノミックデザインスタジオ":
+      studiopages = "../html/ergonimicDesignStudio.html";
+      break;
+    case "インタラクティブアートスタジオ":
+      studiopages = "../html/interactiveArtStudio.html";
+      break;
+    case "インタフェースデザインスタジオ":
+      studiopages = "../html/interfaceDesignStudio.html"; 
+      break;
+    case "インテリアデザインスタジオ":
+      studiopages = "../html/interiorDesignStudio.html";    
+      break;
+    case "映像デザインスタジオ":
+      studiopages = "../html/computerGraphicsAnimation.html";
+      break;
+    case "ネットワークデザインスタジオ":
+      studiopages = "../html/networkDesignStudio.html";  
+      break;
+    case "ソフトウェアデザインスタジオ":
+      studiopages = "../html/softwareDesignStudio.html";    
+      break;
+    case "空間デザインスタジオ":
+      studiopages = "../html/spacialDesignStudio.html";    
+      break;
+    case "トランスポーテーションデザインスタジオ":
+      studiopages = "../html/transportationDesignStudio.html";    
+      break;
+    case "ヴィジュアルコミュニケーションデザインスタジオ":
+      studiopages = "../html/visualCommunicationDesignStudio.html";
+      break;
+  }
+
+   studioPhotoLink.href = studiopages;
+   studioTextLink.href = studiopages;
+   studioPhotoLink.appendChild(studioPhoto);
+   studioTextLink.appendChild(studioTitle);
+   studioDiv_ja.appendChild(studioPhotoLink);
+   studioDiv_ja.appendChild(studioTextLink);
    document.getElementById('studios').appendChild(studioDiv_ja);
 
  });
@@ -46,12 +93,14 @@ const renderJson2 = (json) => {
 
    const facultyDiv_ja = document.createElement('div');
    const facultyText = document.createElement('div');
+   const facultyPhotoContainer = document.createElement('div');
    const facultyName = document.createElement("p");
    const facultyTitle = document.createElement("p");
    const facultyStudio = document.createElement("p");
    const facultyMajor = document.createElement("p");
    const facultyPhoto = document.createElement("img");
    facultyText.className = 'faculty-text';
+   facultyDiv_ja.className = 'faculty-div';
    facultyName.className = 'faculty-name';
    facultyName.textContent = faculty['f-faculty-ja'];
    facultyTitle.className = 'faculty-title';
@@ -62,7 +111,7 @@ const renderJson2 = (json) => {
    facultyMajor.textContent = faculty['major-ja'];
    facultyPhoto.className = 'faculty-photo';
    facultyPhoto.src = faculty['faculty-photo'];
-   facultyDiv_ja.appendChild(facultyPhoto);
+   facultyPhotoContainer.appendChild(facultyPhoto);
    facultyText.appendChild(facultyName);
    facultyText.appendChild(facultyTitle);
    facultyText.appendChild(facultyStudio);
@@ -75,9 +124,11 @@ const renderJson2 = (json) => {
     facultyLink.href = faculty['f-link'];
     facultyText.appendChild(facultyLink);
   }
+    facultyDiv_ja.appendChild(facultyPhotoContainer);
+    facultyDiv_ja.appendChild(facultyText);
   
    document.getElementById('faculties').appendChild(facultyDiv_ja);
-   document.getElementById('faculties').appendChild(facultyText);
+   //document.getElementById('faculties').appendChild(facultyText);
  });
 }
 
