@@ -23,40 +23,40 @@ const renderJson = (json) => {
    var studiopages;
    switch (studio['name-ja']) {
     case "エディティングスタジオ":
-      studiopages = "../html/editorialDesignStudio.html";
+      studiopages = "html/editorialDesignStudio.html";
       break;
     case "製品・サービスデザインスタジオ":
-      studiopages = "../html/equipmentDesignStudio.html";
+      studiopages = "html/equipmentDesignStudio.html";
       break;
     case "エルゴノミックデザインスタジオ":
-      studiopages = "../html/ergonimicDesignStudio.html";
+      studiopages = "html/ergonimicDesignStudio.html";
       break;
     case "インタラクティブアートスタジオ":
-      studiopages = "../html/interactiveArtStudio.html";
+      studiopages = "html/interactiveArtStudio.html";
       break;
     case "インタフェースデザインスタジオ":
-      studiopages = "../html/interfaceDesignStudio.html"; 
+      studiopages = "html/interfaceDesignStudio.html"; 
       break;
     case "インテリアデザインスタジオ":
-      studiopages = "../html/interiorDesignStudio.html";    
+      studiopages = "html/interiorDesignStudio.html";    
       break;
     case "映像デザインスタジオ":
-      studiopages = "../html/computerGraphicsAnimation.html";
+      studiopages = "html/computerGraphicsAnimation.html";
       break;
     case "ネットワークデザインスタジオ":
-      studiopages = "../html/networkDesignStudio.html";  
+      studiopages = "html/networkDesignStudio.html";  
       break;
     case "ソフトウェアデザインスタジオ":
-      studiopages = "../html/softwareDesignStudio.html";    
+      studiopages = "html/softwareDesignStudio.html";    
       break;
     case "空間デザインスタジオ":
-      studiopages = "../html/spacialDesignStudio.html";    
+      studiopages = "html/spacialDesignStudio.html";    
       break;
     case "トランスポーテーションデザインスタジオ":
-      studiopages = "../html/transportationDesignStudio.html";    
+      studiopages = "html/transportationDesignStudio.html";    
       break;
     case "ヴィジュアルコミュニケーションデザインスタジオ":
-      studiopages = "../html/visualCommunicationDesignStudio.html";
+      studiopages = "html/visualCommunicationDesignStudio.html";
       break;
   }
 
